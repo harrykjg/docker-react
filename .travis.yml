@@ -1,4 +1,3 @@
-#获得superuser权限
 sudo: required 
 
 services：
