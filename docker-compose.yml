@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:   #如果有当前目录下有dockerfile的话就直接 . 就行了，但是这里要制定一个customized的dockerfile所以要加上好context和dockerfile
+      context: . #就是只当前目录下，也可以指定某个目录
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app
