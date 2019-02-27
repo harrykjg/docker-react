@@ -1,7 +1,7 @@
 #获得superuser权限
 sudo: required 
 
-services¸：
+services：
   - docker
 
 before_install:
